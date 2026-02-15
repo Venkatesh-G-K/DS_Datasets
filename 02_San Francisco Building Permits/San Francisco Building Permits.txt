@@ -1,0 +1,57 @@
+https://www.kaggle.com/code/alexisbcook/exercise-handling-missing-values
+
+Kaggle – Handling Missing Values (Short Explanation)
+
+This exercise teaches how to detect and handle missing (null/NaN) values in datasets before building ML models.
+
+Main Idea
+
+Real-world data often has missing values → you must clean or fill them so models work properly.
+
+Key Methods Used
+1. Remove Missing Data
+
+Drop rows/columns with missing values (dropna()).
+
+Simple but may lose useful data and reduce dataset size.
+
+2. Imputation (Fill Missing Values)
+
+Replace missing values with estimated values:
+
+Mean / Median / Mode
+
+Keeps dataset size but may slightly distort data.
+
+3. Forward / Backward Fill
+
+Use previous value (ffill) or next value (bfill).
+
+Useful for ordered or time-series data.
+
+4. Interpolation (advanced)
+
+Estimate value based on pattern/trend of nearby data.
+
+Why This Matters
+
+Handling missing values properly:
+
+Improves data quality
+
+Improves model accuracy
+
+Prevents bias and errors in analysis
+
+In Simple
+
+This Kaggle exercise shows how to:
+
+Detect missing values
+
+Decide whether to drop or fill them
+
+Use basic imputation techniques
+
+Prepare clean data for machine learning
+

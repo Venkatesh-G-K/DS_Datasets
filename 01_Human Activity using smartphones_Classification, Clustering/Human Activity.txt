@@ -1,0 +1,56 @@
+Link:
+https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones
+
+
+Human Activity Recognition (HAR) Using Smartphones — Short Explanation
+
+Purpose: Identify what activity a person is doing using smartphone sensor data.
+
+Participants: 30 people (age 19–48).
+
+Activities (6): Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, Laying.
+
+Device & Sensors: Samsung Galaxy S II worn on waist → Accelerometer (3-axis) + Gyroscope (3-axis), sampled at 50 Hz.
+
+Data Processing
+
+Signals filtered to remove noise.
+
+Data split into 2.56-sec sliding windows (128 readings, 50% overlap).
+
+Acceleration separated into body motion + gravity using low-pass filter (0.3 Hz).
+
+From each window → 561 features extracted (time + frequency domain).
+
+Features normalized between [-1, 1].
+
+What each record contains
+
+3-axis total acceleration + body acceleration.
+
+3-axis angular velocity (gyroscope).
+
+561-feature vector.
+
+Activity label (what the person was doing).
+
+Subject ID (1–30).
+
+Dataset Split
+
+70% → Training set (train/)
+
+30% → Test set (test/)
+
+Main Files
+
+X_train / X_test → Feature data (561 features).
+
+y_train / y_test → Activity labels.
+
+subject_train / subject_test → Person ID.
+
+Inertial Signals/ → Raw sensor signals (acceleration & gyro).
+
+In simple:
+This dataset is used to train and test machine learning models that automatically recognize human activities from smartphone motion sensor data.

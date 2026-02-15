@@ -1,0 +1,98 @@
+Link:
+httpswww.kaggle.comcodertatmandata-cleaning-challenge-scale-and-normalize-datainputselect=ks-projects-201801.csv
+
+Kaggle – Scaling and Normalization (Short Explanation)
+
+This exercise teaches how to adjust numerical data values so machine learning models perform better.
+
+Main Concept
+
+Many ML algorithms work best when numbers are in a similar range or distribution.
+Scaling/Normalization helps make features comparable and stable.
+
+Techniques Covered
+1. Scaling (Min-Max Scaling)
+
+Rescales values to a fixed range [0, 1].
+
+Formula:
+
+𝑥
+′
+=
+𝑥
+−
+𝑚
+𝑖
+𝑛
+𝑚
+𝑎
+𝑥
+−
+𝑚
+𝑖
+𝑛
+x
+′
+=
+max−min
+x−min
+	​
+
+
+Keeps shape of data, only changes range.
+
+Useful for distance-based models (KNN, SVM, Neural Networks).
+
+2. Standardization (Z-Score Scaling)
+
+Centers data around mean = 0 and std = 1.
+
+Formula:
+
+𝑥
+′
+=
+𝑥
+−
+𝜇
+𝜎
+x
+′
+=
+σ
+x−μ
+	​
+
+
+Works well when data follows normal distribution.
+
+3. Normalization (Log Transform)
+
+Used when data is skewed (not symmetric).
+
+Log transform reduces large values and makes distribution more normal.
+
+Example: np.log(column).
+
+Why Important
+
+Prevents one feature from dominating others
+
+Speeds up model training
+
+Improves accuracy and convergence
+
+Required for many ML algorithms
+
+In Simple
+
+This exercise shows:
+
+How to scale values to same range
+
+How to standardize data (mean 0, std 1)
+
+How to normalize skewed data using log transform
+
+Prepare clean, balanced data for ML models
